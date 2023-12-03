@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu TAS Beginner', cursive;
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+
+
+
+
+
+
+html,
+body {
+    scroll-behavior: smooth;
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    height: 13%;
+    background-color: black;
+    justify-content: space-between;
+    border-bottom: 2px #dadada solid;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav h2 {
+    font-size: 80px;
+    font-family: 'Noto Serif Devanagari', serif;
+    padding: 0 20px;
+
+}
+
+.nav-part2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-part3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+a {
+    list-style: none;
+    margin: 0 10px;
+    background-color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#page1 {
+    margin-top: 7%;
+    height: 90%;
+
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+}
+
+#page1 img {
+    height: 700px;
+
+
+}
+
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    height: 100%;
+    z-index: 1;
+}
+
+.container img {
+    transform: translateY(-78%);
+
+}
+
+
+.para {
+    font-size: 200px;
+    display: flex;
+
+    overflow: hidden;
+    transform: translateY(-10%);
+    opacity: 1;
+
+}
+
+h1 {
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white;
+    white-space: nowrap;
+    letter-spacing: 1px;
+
+    animation: move-rtl 10000ms linear infinite;
+
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#page2 {
+    border-top: 2px #dadada solid;
+    height: 100%;
+    width: 100%;
+
+    background-color: black;
+    z-index: 2;
+    border-bottom: 2px #dadada solid;
+    margin-top: 20px;
+
+}
+
+
+.heading {
+    height: 20%;
+    font-size: 50px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+#page2 .content img {
+    height: 400px;
+    border-radius: 40px;
+
+    padding: 30px;
+    margin-left: 20px;
+    transform: translateY(-10%);
+
+}
+
+#page2 .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text {
+
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text h2 {
+    transform: translateY(-100%);
+}
+
+#page2 p {
+    margin-right: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+
+#page3 {
+    height: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid gray
+}
+
+.boxes {
+    height: 70%;
+    display: flex;
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+
+
+.box {
+
+    height: 300px;
+    width: 400px;
+    border: 2px white solid;
+    transition: 0.3s ease-in;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+
+
+.box2 {
+    scale: 1.1;
+
+}
+
+.inner-text {
+    transition: 0.3s ease-in;
+
+}
+
+.box:hover .inner-text {
+    color: black;
+
+}
+
+.box:hover {
+    background-color: white;
+    color: black;
+    scale: 1.05;
+    font-size: 20px;
+
+
+    /* Apply transformation on hover */
+
+}
+
+.box2:hover {
+    scale: 1.15;
+}
+
+i {
+
+    margin: 20px;
+    font-size: 100px;
+    transition: 0.3s ease-in;
+
+}
+
+.box:hover i {
+    color: black;
+    font-size: 110px;
+
+
+}
+
+.inner-text {
+    font-size: 25px;
+    font-weight: 1000px;
+}
+
+
+
+.inner {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column
+}
+
+#page4 {
+    height: 100%;
+    width: 100%;
+}
+
+#contactme {
+    background-color: red;
+}
+
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+
+input,
+textarea {
+    margin: 5px;
+    width: 250px;
+}
+
+.fields {
+    display: flex;
+}
+
+
+@media(max-width:868px) {
+    p {
+        font-size: 12px;
+        margin: 0px
+    }
+
+
+
+    #page2 p {
+        margin-right: 0px;
+    }
+
+
+    .heading {
+        height: 20%;
+        font-size: 40px;
+
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #page2 .content img {
+        height: 300px;
+    }
+
+
+
+    #page3 {
+        height: 205%
+    }
+
+    #page3 .boxes {
+        margin-top: -100px
+    }
+}
+
+
+
+
+
+@media(max-width:500px) {
+    #page2 {
+        margin: 0px;
+        margin-top: 0px;
+
+    }
+
+
+
+    #page2 .content img {
+        height: 200px;
+        border-radius: 20px;
+
+        padding: 0px;
+        margin-left: 0px;
+        transform: translateY(0%);
+
+    }
+}
+
+
+.column-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.messages {
+    word-spacing: 2px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.messages>h3,
+h4 {
+    margin: 0 20px;
+}
+
+.messages>h2 {
+    margin-bottom: 20px;
+}
+
+.button-area>button {
+    transform: translateX(5%);
+    transition: 0.3s;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 20px;
+    color: black
+}
+
+.button-area>button:hover {
+    scale: 1.07;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 0px 18px;
+    font-weight: 999px;
+
+}
+
+
+footer {
+    background-color: white;
+    height: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
